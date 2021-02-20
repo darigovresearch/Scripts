@@ -16,8 +16,14 @@ os.chdir("Education")
 for i in range(0, len(content)):
     print("Updating repository " + str(i + 1) + " of " + str(len(content)))
     folder_name = content[i]["Repository URL"][35:]
+
+    # enter folder
     os.chdir(folder_name)
+
+    # run command
     relevant_command = "git pull"
     # print(relevant_command)
     os.system(relevant_command)
-    os.chdir(folder_name)
+
+    # return to parent directory
+    os.chdir("..")
