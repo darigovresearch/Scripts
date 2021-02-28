@@ -10,9 +10,23 @@ content = json["content"]
 
 # making a relevant folder
 os.chdir("..")
-os.mkdir("Darigov Research")
+
+try:
+    # try to make the folder
+    os.mkdir("Darigov Research")
+except Exception as e:
+    # notify user that folder already exists
+    print("Folder already exists")
+
 os.chdir("Darigov Research")
-os.mkdir("Education")
+
+try:
+    # try to make the folder
+    os.mkdir("Education")
+except Exception as e:
+    # notify user that folder already exists
+    print("Folder already exists")
+
 os.chdir("Education")
 
 for i in range(0, len(content)):

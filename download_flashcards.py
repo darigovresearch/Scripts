@@ -11,7 +11,13 @@ content = json["content"]
 
 # making a relevant folder
 os.chdir("..")
-os.mkdir("Darigov Research Flashcards")
+try:
+    # try to make the folder
+    os.mkdir("Darigov Research Flashcards")
+except Exception as e:
+    # notify user that folder already exists
+    print("Folder already exists")
+
 os.chdir("Darigov Research Flashcards")
 
 # getting all relevant urls
