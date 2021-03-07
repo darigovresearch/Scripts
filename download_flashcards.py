@@ -1,3 +1,5 @@
+# download_flashcards.py is code to clone all .apkg files from Flashcards
+
 import requests, json, os
 from urllib.parse import unquote
 

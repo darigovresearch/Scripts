@@ -1,3 +1,5 @@
+# run_all.py is code to run all scripts one after the other in this repository
+
 import os
 
 try:

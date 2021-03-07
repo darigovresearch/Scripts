@@ -1,3 +1,5 @@
+# clone_education.py is code to clone all educational repositories 
+
 import requests, json, os
 
 meta_url = "https://raw.githubusercontent.com/darigovresearch/Meta/main/meta.json"
