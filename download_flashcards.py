@@ -1,6 +1,8 @@
 # download_flashcards.py is code to clone all .apkg files from Flashcards
 
-import requests, json, os
+import requests
+import json
+import os
 from urllib.parse import unquote
 
 meta_url = "https://raw.githubusercontent.com/darigovresearch/Meta/main/meta.json"
