@@ -17,11 +17,19 @@ network={
  psk=\"""" + pwd + """\"
 }"""
 
-# generate wpa file
-wpa_file = open('wpa_supplicant.conf', 'w')
-wpa_file.write(wpa_string)
-wpa_file.close()
 
-# generate ssh file
-ssh_file = open('ssh', 'w')
-ssh_file.close()
+def main():
+    pass
+
+    # generate wpa file
+    wpa_file = open('wpa_supplicant.conf', 'w')
+    wpa_file.write(wpa_string)
+    wpa_file.close()
+
+    # generate ssh file
+    ssh_file = open('ssh', 'w')
+    ssh_file.close()
+
+
+if __name__ == '__main__':
+    main()
